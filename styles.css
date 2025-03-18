@@ -1,0 +1,11 @@
+
+body { font-family: Arial, sans-serif; text-align: center;
+    background: radial-gradient(circle at 50% 50%, #282c34, #20232a);
+    color: white;
+}
+.container { max-width: 400px; margin: 20px auto; }
+input, select { width: 100%; padding: 10px; margin: 5px 0; font-size: 16px;
+ background: transparent;
+}
+button { padding: 10px; margin: 10px 5px; font-size: 16px; cursor: pointer;
+}

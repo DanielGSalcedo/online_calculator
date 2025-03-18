@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor y Calculadora</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <h2>Conversor y Calculadora</h2>
+    <label>Decimal:</label>
+    <input type="text" id="dec" oninput="convertFrom('dec')">
+    <label>Binario:</label>
+    <input type="text" id="bin" oninput="convertFrom('bin')">
+    <label>Octal:</label>
+    <input type="text" id="oct" oninput="convertFrom('oct')">
+    <label>Hexadecimal:</label>
+    <input type="text" id="hex" oninput="convertFrom('hex')">
+
+    <h3>Operaciones</h3>
+    <label>Valor 1:</label>
+    <input type="text" id="num1">
+    <label>Valor 2:</label>
+    <input type="text" id="num2">
+    <label>Base de operación:</label>
+    <select id="base">
+        <option value="dec">Decimal</option>
+        <option value="bin">Binario</option>
+        <option value="oct">Octal</option>
+        <option value="hex">Hexadecimal</option>
+    </select>
+    <div>
+        <button onclick="calculate('add')">Sumar</button>
+        <button onclick="calculate('subtract')">Restar</button>
+        <button onclick="calculate('multiply')">Multiplicar</button>
+        <button onclick="calculate('divide')">Dividir</button>
+    </div>
+    <h3>Resultado: <span id="result"></span></h3>
+</div>
+<script src="index.js"></script>
+</body>
+</html>
